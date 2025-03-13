@@ -8,40 +8,29 @@ const default_config = {
   localIcons: true,
   tabs: [
     {
-      name: "home",
-      background_url: `src/img/banners/cbg-8.gif`,
+      name: "kaiser",
+      background_url: `src/img/image.png`,
       categories: [
         {
-          name: "",
+          name: "Mạng xã hội",
           links: [
             {
-              name: "gmail",
-              url: "https://mail.google.com",
-              icon: "brand-gmail",
+              name: "facebook",
+              url: "https://www.facebook.com",
+              icon: "brand-facebook",
               icon_color: palette.blue,
             },
             {
-              name: "classroom",
-              url: "https://classroom.google.com/u/1/",
-              icon: "books",
-              icon_color: palette.green,
+              name: "instagram",
+              url: "https://www.instagram.com",
+              icon: "brand-instagram",
+              icon_color: palette.pink,
             },
             {
-              name: "docs",
-              url: "https://docs.google.com/document/u/0/",
-              icon: "file-text",
-              icon_color: palette.blue,
-            },
-          ],
-        },
-        {
-          name: "",
-          links: [
-            {
-              name: "youtube",
-              url: "https://www.youtube.com",
-              icon: "brand-youtube",
-              icon_color: palette.red,
+              name: "tiktok",
+              url: "https://www.tiktok.com",
+              icon: "brand-tiktok",
+              icon_color: palette.peach,
             },
             {
               name: "reddit",
@@ -58,73 +47,85 @@ const default_config = {
           ],
         },
         {
-          name: "",
+          name: "Google",
           links: [
             {
-              name: "github",
-              url: "https://github.com/ashish0kumar",
-              icon: "brand-github",
+              name: "gmail",
+              url: "https://mail.google.com",
+              icon: "brand-gmail",
+              icon_color: palette.red,
+            },
+            {
+              name: "youtube",
+              url: "https://www.youtube.com",
+              icon: "brand-youtube",
+              icon_color: palette.red,
+            },
+            {
+              name: "classroom",
+              url: "https://classroom.google.com/u/1/",
+              icon: "chalkboard",
               icon_color: palette.green,
             },
             {
-              name: "devdocs",
-              url: "https://devdocs.io",
-              icon: "code",
-              icon_color: palette.blue,
-            },
-            {
-              name: "hacker-news",
-              url: "https://news.ycombinator.com",
-              icon: "news",
-              icon_color: palette.peach,
+              name: "kaggle",
+              url: "https://www.kaggle.com",
+              icon: "brand-kick",
+              icon_color: palette.sky,
             },
           ],
         },
         {
-          name: "",
+          name: "Học tập",
           links: [
-            {
-              name: "leetcode",
-              url: "https://leetcode.com/u/ashish0kumar/",
-              icon: "brand-leetcode",
-              icon_color: palette.yellow,
-            },
-            {
-              name: "dsa",
-              url: "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2",
-              icon: "list-details",
-              icon_color: palette.red,
-            },
             {
               name: "udemy",
               url: "https://www.udemy.com/home/my-courses/learning/",
               icon: "certificate",
               icon_color: palette.lavender,
             },
-          ]
-        },
-        {
-          name: "",
-          links: [
             {
-              name: "chatgpt",
-              url: "https://chatgpt.com/",
-              icon: "brand-openai",
-              icon_color: palette.teal,
+              name: "japanese",
+              url: "https://drive.google.com/drive/folders/1iTUu9RzFuaZqbeK1abDxfXzO10zu8mC8",
+              icon: "torii",
+              icon_color: palette.peach,
             },
             {
+              name: "english",
+              url: "https://drive.google.com/drive/folders/164FmRpa7TgPWc74a-yopVK1JBccJe78I",
+              icon: "currency-dollar",
+              icon_color: palette.green,
+            },
+            {
+              name: "ML Resource",
+              url: "https://ml-resources.vercel.app/",
+              icon: "brain",
+              icon_color: palette.blue,
+            },
+          ],
+        },
+        {
+          name: "AI",
+          links: [
+            {
               name: "claude",
-              url: "https://claude.ai/new",
+              url: "https://claude.ai/chats",
               icon: "robot",
               icon_color: palette.peach,
             },
             {
-              name: "monkeytype",
-              url: "https://monkeytype.com",
-              icon: "keyboard",
-              icon_color: palette.red,
+              name: "perplexity",
+              url: "https://www.perplexity.ai/",
+              icon: "robot",
+              icon_color: palette.green,
             },
-          ]
+            {
+              name: "you.com",
+              url: "https://you.com/",
+              icon: "brand-ycombinator",
+              icon_color: palette.blue,
+            },
+          ],
         },
       ],
     },

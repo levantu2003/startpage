@@ -23,16 +23,16 @@ class Links extends Component {
             <h1>${name}</h1>
               <div class="links-wrapper">
               ${links
-                .map(
-                  (link) => `
+              .map(
+                (link) => `
                   <div class="link-info">
                     <a href="${link.url}" target="_blank">
                       ${Links.getIcon(link)}
                       ${link.name ? `<p class="link-name">${link.name}</p>` : ""}
                     </a>
                 </div>`,
-                )
-                .join("")}
+              )
+              .join("")}
             </div>
           </li>`;
         })
@@ -211,7 +211,7 @@ class Tabs extends Component {
           margin: auto;
           border-radius: 15px;
           box-shadow: inset 0 0 0 2px var(--flavour);
-          left: calc(15% - 42.5px);
+          left: calc(15% - 70px);
           bottom: 0;
           top: 0;
           background: linear-gradient(to top, rgb(50 48 47 / 90%), transparent);
