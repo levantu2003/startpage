@@ -3,6 +3,7 @@ const components = {
   "current-time": Clock,
   "weather-forecast": Weather,
   "tabs-list": Tabs,
+  "search-bar": Search,
 };
 
 Object.keys(components).forEach((componentName) => {

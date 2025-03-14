@@ -26,7 +26,7 @@ class Links extends Component {
               .map(
                 (link) => `
                   <div class="link-info">
-                    <a href="${link.url}" target="_blank">
+                    <a href="${link.url}">
                       ${Links.getIcon(link)}
                       ${link.name ? `<p class="link-name">${link.name}</p>` : ""}
                     </a>
@@ -56,7 +56,12 @@ class Category extends Component {
         .map(({ name, background_url }, index) => {
           return `<ul class="${name}" ${Category.getBackgroundStyle(background_url)} ${index == 0 ? "active" : ""}>
             <div class="banner"></div>
-            <div class="links">${Links.getAll(name, tabs)}</div>
+            <div class="links">
+              <li class="search-container-wrapper">
+                <search-bar></search-bar>
+              </li>
+              ${Links.getAll(name, tabs)}
+            </div>
           </ul>`;
         })
         .join("")}
@@ -165,7 +170,7 @@ class Tabs extends Component {
           width: 70%;
           height: 100%;
           background: ${CONFIG.palette.base};
-          padding: 4% 6%;
+          padding: 1.5% 6% 4% 6%;
           flex-wrap: wrap;
       }
 
@@ -265,6 +270,13 @@ class Tabs extends Component {
           100% {
               opacity: 1;
           }
+      }
+
+      .search-container-wrapper {
+          list-style: none;
+          padding: 0;
+          margin-bottom: 0;
+          width: 100%;
       }
     `;
   }
